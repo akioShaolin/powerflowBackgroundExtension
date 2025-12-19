@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFlow Background Changer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PowerFlow Background</h1>
+            <p>Personalize o plano de fundo</p>
+        </div>
+        
+        <div class="form-section">
+			<div class="input-group>
+				<label for="imageUrl">URL da Imagem:</label>
+				<input 
+					type="text" 
+					id="imageUrl" 
+					placeholder="https://exemplo.com/imagem.jpg"
+				>
+            </div>
+			
+            <div class="button-group">
+                <button id="applyBackground" class="btn-primary">
+                    Aplicar Fundo
+                </button>
+                <button id="removeBackground" class="btn-secondary">
+                    Remover Fundo
+                </button>
+            </div>
+        </div>
+        
+        <div class="current-section">
+            <p class="current-label">Imagem atual:</p>
+            <div id="currentImage" class="current-image">
+                <span class="no-image">Nenhuma imagem definida</span>
+            </div>
+        </div>
+		
+		<div class="dark-mode-toggle">
+            <label for="darkModeToggle">Modo Escuro:</label>
+            <input type="checkbox" id="darkModeToggle">
+        </div>
+        <div class="status" id="status"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
+
